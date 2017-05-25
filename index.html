@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="contact form example">
+<!-- START HERE -->
+   <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+   <!-- Style The Contact Form How Ever You Prefer -->
+   <link rel="stylesheet" href="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/style.css">
+
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome.css">
+	<title>Portafolio Joymer Antonio Paja Camayo</title>
+</head>
+<body>
+
+<header class="navbar navbar-default navbar-fixed-top" id="banner">
+  <div class="container"><a class="scrollable" href="#top"><img src="89706.gif " width='80' height='1200'alt="qlip | UI/UX Design and Development" title="Portalio de Joymer por el Mundo"/></a>
+    <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+    <nav class="collapse navbar-collapse" id="navbar" role="navigation">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a class="scrollable" href="#top">Acerca</a></li>
+        <li><a class="scrollable" href="#portfolio">Portfolio</a></li>
+        <li><a class="scrollable" href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<!-- end header--><a id="top" name="home"></a>
+<main>
+  <header>
+    <div class="intro-text">
+      <p  align="justify">Soy una persona responsable, dinamica, con aspiraciones, deseos de superacion y metas basadas en el logro de objetivos; aprendo con rapidez y me intereso por cumplir de manera adecuada con la puntualidad, honestidad y responsabilidad en las distintas actividades que realizo, mi formacion es de Tecnologo  y estudiante de Ingenieria de Sistemas, con experiencia practica en manejo de Base de Datos y Plataformas de Validacion y Cargue FTP, SIVIGILA, SUPERSALUD,FOSYGA Y SISBEN.</p>
+      <hr class="star-bright"/><span class="skills"> Manejo de Base de Datos  - Protocolos de informacion FTP</span>
+    </div><img src="FOTO JOYMER2.PNG" alt="" title="Fotografia Personal de Joymer"/>
+  </header>
+  <!-- Gallery Grid Section-->
+  <section id="portfolio">
+    <h2>PORTAFOlIO</h2>
+    <hr class="star-dark"/>
+    <ul class="grid">
+      <li><img src="SIVIGILA.PNG""/></li>
+      <li><img src="supersalud.PNG"/></li>
+      <li><img src="sisben.png"/></li>
+      <li><img src="fosyga.png"/></li>
+      
+    </ul>
+  </section>
+  <!-- Contact Section-->
+  <section id="contact">
+          <h2>Contacteme</h2>  
+          <p>Quieres entrar en contacto conmigo? Ya sea para solicitar mas informacion sobre mi o mi experiencia, para pedir mi curriculum, simplemente enviame un mensaje  en cualquier momento...</p>
+        <p> Prometo responder....Joymer</p>
+           
+
+    <hr class="star-dark"/>
+    <div>
+  <aside>
+       <p> 
+           ¡Me encantaría saber de usted!</p>
+           <p>Por favor, utilice el formulario de contacto para enviarnos un mensaje.</b>
+        
+       </p>
+   </aside>
+      <form id="gform" method="POST" class="pure-form pure-form-stacked"
+  action="https://script.google.com/macros/s/AKfycbw0WxPnm4Nw2s0uPEwEq3d13My8nLaaR-GJV7Q34U2neD4fjuE/exec">
+    <!-- change the form action to your script url -->
+
+    <fieldset class="pure-group">
+      <label for="name">Nombre: </label>
+      <input id="name" name="name" placeholder="¿Digite su nombre?" />
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="message">Mensaje: </label>
+      <textarea id="message" name="message" rows="10"
+      placeholder="Cuéntame lo que piensas..."></textarea>
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="email"><em>Correo</em> Electronico:</label>
+      <input id="email" name="email" type="email" value=""
+      required placeholder="Digite su Correo Electronico de Contacto"/>
+      <span id="email-invalid" style="visibility:hidden">
+        Must be a valid email address</span> 
+           <!-- cambiar mensaje a español -->
+    </fieldset>
+
+    <fieldset class="pure-group">
+      <label for="color">Color Favorito: </label>
+      <input id="color" name="color" placeholder="Ejemplo_Verde" />
+    </fieldset>
+
+    <button class="button-success pure-button button-xlarge">
+      <i class="fa fa-paper-plane"></i>&nbsp;ENVIAR</button>
+
+      </form>
+
+      <!-- cambiar mensaje a español -->
+  <div style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em> for contacting us!
+      We will get back to you soon!</h2>
+  </div>
+
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript"
+  src="https://cdn.rawgit.com/dwyl/html-form-send-email-via-google-script-without-server/master/form-submission-handler.js"></script>
+  <!-- <script data-cfasync="false" type="text/javascript"
+  src="/form-submission-handler.js"></script> -->
+<!-- END -->
+    </div>
+  </section>
+  <!-- Scroll to Top Button (Only supposed to be visible on small and small screen sizes)-->
+  <div class="scroll-top"><a class="button scrollable" href="#top"><i class="fa fa-chevron-up"></i></a></div>
+</main>
+<!-- Footer-->
+<footer>
+  <div id="footer-above">
+    <div>
+      <h3>Acerca de esta pagina</h3>
+      <p>Hecho con <i class="fa fa-fw fa-coffee"></i> and <i class="fa fa-fw fa-music"></i><br/> Por <a href="https://www.facebook.com/hallaathrad"">mi pagina social Joymer</a>.</p>
+    </div>
+    <div>
+      <h3>Alrededor de la web</h3>
+      <ul>
+        <li><a class="button social" href="https://www.linkedin.com/feed/?trk="><i class="fa fa-fw fa-linkedin"></i></a></li>
+        <li><a class="button social" href="https://github.com/"><i class="fa fa-fw fa-github"></i></a></li>
+        <li><a class="button social" href="https://www.facebook.com/hallaathrad"><i class="fa fa-fw fa-twitter"></i></a></li>
+        
+      </ul>
+    </div>
+  </div>
+  <div id="footer-below"> Joymer - 
+    <script>document.write(new Date().getFullYear())</script> Todos los derechos Reservados
+  </div>
+</footer>
+<!-- <aside id="html5badge"><img src="http://www.w3.org/html/logo/badge/html5-badge-v-css3-graphics-semantics.png" width="38" height="170" alt="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, and Semantics" title="HTML5 Powered with CSS3 / Styling, Graphics, 3D &amp; Effects, and Semantics"></aside>-->
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery-easing.js"></script>
+<script type="text/javascript" src="bootstrap.js"></script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
